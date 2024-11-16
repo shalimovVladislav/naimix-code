@@ -10,7 +10,6 @@ const CompatibilityForm: React.FC = () => {
 
   const handleSubmit = () => {
     dispatch(setNames({ name1, name2 }));
-    // Пример простой логики определения результата
     const result = Math.random() > 0.5 ? "Совместимость высокая!" : "Совместимость низкая!";
     dispatch(setResult(result));
   };
